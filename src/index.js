@@ -15,6 +15,10 @@ if (!process.env.PORT) {
 //
 const PORT = process.env.PORT;
 
+app.get("/", (req, res) => {
+    res.send("Hello world!");
+});
+
 //
 // Registers a HTTP GET route for video streaming.
 //
